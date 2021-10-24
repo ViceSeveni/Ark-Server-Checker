@@ -9,17 +9,17 @@ metrics = 'https://www.battlemetrics.com/servers/ark/'
 
 #Create csv file with the "map names , battle metrics id's" and provide the path below
 server_list_path = ''
-#create a csv file with your friends' "steam/epic names , a nickname"
+#create a csv file with your friends' "steam/epic names , a nickname" and provide the path below
 friends_list_path = ''
 
 
-#serv_file = open(server_list_path , 'r')
-#file_reader = csv.reader(serv_file)
-#ark_list = list(file_reader)
+serv_file = open(server_list_path , 'r')
+file_reader = csv.reader(serv_file)
+ark_list = list(file_reader)
 
-#friends_file = open(friends_list_path , 'r')
-#friends_reader = csv.reader(friends_file)
-#friends_list = list(friends_reader)
+friends_file = open(friends_list_path , 'r')
+friends_reader = csv.reader(friends_file)
+friends_list = list(friends_reader)
 
 class servlist():
     def __init__(self, serv_link):
